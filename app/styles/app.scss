@@ -1,0 +1,26 @@
+$black: #000;
+$pink: #b9008a;
+$white: #fff;
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.signup,
+.submit {
+  background-color: $pink;
+  color: $white;
+}
