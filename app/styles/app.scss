@@ -1,6 +1,11 @@
 $black: #000;
 $pink: #b9008a;
 $white: #fff;
+$darkgray: #5a5b60;
+$lightgray: #a9b0be;
+$sheergray: rgba(54, 25, 25, .3);
+$cupcakepink: #fda2cd;
+$sheerblue: #c2d1e7;
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
@@ -19,8 +24,58 @@ img {
   max-width: 100%;
 }
 
+.login,
 .signup,
-.submit {
-  background-color: $pink;
+.submit,
+.add-recipe,
+.add-ingredient {
+  background-color: $cupcakepink;
   color: $white;
+  font-family: cursive;
+}
+
+.form-signup-heading,
+.form-signin-heading {
+  font-family: cursive;
+}
+
+.navbar-brand {
+  color: $darkgray;
+  font-family: cursive;
+  font-size: 30px;
+
+  &:hover {
+    color: $cupcakepink;
+  }
+}
+
+.wrapper {
+  background-image: url('../images/cupcake.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+//links in navbar will not change color
+.navlinks {
+  color: $darkgray;
+  font-family: cursive;
+  font-size: 20px;
+  list-style-type: none;
+  text-decoration: none;
+
+  &:hover {
+    color: $cupcakepink;
+  }
+}
+
+.forms {
+  background-color: $sheerblue;
+  border: 1px solid $white;
+  border-radius: 50%;
+  height: 400px;
+  margin-left: 10px;
+  padding-top: 50px;
+  width: 600px;
 }
